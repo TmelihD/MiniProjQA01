@@ -36,7 +36,7 @@ public class PojoUrun  {
         this.id = id;
     }
 
-    public void setUrunImi(String urunImi) {
+    public  void setUrunImi(String urunImi) {
         this.urunIsmi = urunImi;
     }
 
@@ -54,5 +54,17 @@ public class PojoUrun  {
 
     public void setRaf(String raf) {
         this.raf = raf;
+    }
+
+    @Override
+    public String toString() {
+        return "PojoUrun{" +
+                "id=" + id +
+                ", urunIsmi='" + urunIsmi + '\'' +
+                ", ureetici='" + ureetici + '\'' +
+                ", miktar=" + miktar +
+                ", birim='" + birim + '\'' +
+                ", raf='" + raf + '\'' +
+                '}';
     }
 }
